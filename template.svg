@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" 
+	width="800" height="150" style="font-size:26px">
+
+<symbol id="L">
+	<polyline points="0,0 0,{maxH} {maxW},{maxH}" 
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+</symbol>
+
+<symbol id="E">
+	<polyline points="{maxW},0 0,0 0,{maxH} {maxW},{maxH}" 
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+	<polyline points="0,{maxH/2} {maxW},{maxH/2}" 
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+</symbol>
+
+<symbol id="D">
+	<polygon points="0,0 {maxW},{maxH/4} {maxW},{maxH/4*3} 0,{maxH}" 
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+</symbol>
+
+<symbol id="minus">
+	<polygon points="0,{maxH/2} 50,{maxH/2}" 
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+</symbol>
+
+<symbol id="concat">
+	<ellipse cx="50" cy="25" rx="50" ry="25" fill="#ffffff" stroke="#000000" stroke-width="2" />
+	<text x="50" y="30" text-anchor="middle"
+		fill="#000000" stroke="#000000" style="font-size:32px">conat</text>
+</symbol>
+
+
+<use xlink:href="#L" x="10" y="10"></use>
+<use xlink:href="#E" x="130" y="10"></use>
+<use xlink:href="#D" x="260" y="10"></use>
+<use xlink:href="#minus" x="400" y="10"></use>
+
+</svg>
+
