@@ -1,4 +1,10 @@
-maxW:100
+maxW:80
 maxH:130
 strokeW:13
 lineColor:"black"
+CL:25
+CW:90
+aMargin:30
+aUp:10
+lowerH:65
+mW:80

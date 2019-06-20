@@ -23,17 +23,63 @@
 	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
 </symbol>
 
-<symbol id="concat">
-	<ellipse cx="50" cy="25" rx="50" ry="25" fill="#ffffff" stroke="#000000" stroke-width="2" />
-	<text x="50" y="30" text-anchor="middle"
-		fill="#000000" stroke="#000000" style="font-size:32px">conat</text>
+<symbol id="C">
+	<polyline points="{CW},{maxH/4}
+			 {CW/2},0
+			 0,{maxH/4}
+			 0,{maxH/4*3}
+			 {CW/2},{maxH}
+			 {CW},{maxH/4*3}" 
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
 </symbol>
 
+<symbol id="a">
+	<polyline points="{maxW/2+20},{lowerH/4}
+			  {maxW/4+10},0
+			  0,{lowerH/4}
+			  0,{lowerH/4*3}
+			  {maxW/4+10},{lowerH}
+			  {maxW/4*2+20},{lowerH/4*3}"
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+
+	<polyline points="{maxW/4*2+20},{-5} {maxW/4*2+20},{lowerH+5}" 
+		fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+</symbol>
+
+<symbol id="m">
+	<polyline points="0,{lowerH}
+			  0,{lowerH/5}
+			  {mW/4},0
+			  {mW/4*2},{lowerH/5}
+			  {mW/4*2},{lowerH}
+			  {mW/4*2},{lowerH/5}
+			  {mW/4*3},0
+			  {mW},{lowerH/5}
+			  {mW},{lowerH}"
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+</symbol>
+
+<symbol id="p">
+	<polyline points="0,{lowerH/4}
+			  {maxW/4+10},0
+			  {maxW/2+20},{lowerH/4}
+			  {maxW/4*2+20},{lowerH/4*3}
+			  {maxW/4+10},{lowerH}
+			  0,{lowerH/4*3}"
+	      fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+
+	<polyline points="0,{-5} 0,{lowerH+35}" 
+		fill="none" stroke="{lineColor}" stroke-width="{strokeW}" />
+</symbol>
 
 <use xlink:href="#L" x="10" y="10"></use>
-<use xlink:href="#E" x="130" y="10"></use>
-<use xlink:href="#D" x="260" y="10"></use>
-<use xlink:href="#minus" x="400" y="10"></use>
+<use xlink:href="#E" x="120" y="10"></use>
+<use xlink:href="#D" x="230" y="10"></use>
+<use xlink:href="#minus" x="340" y="10"></use>
+<use xlink:href="#C" x="415" y="10"></use>
+<use xlink:href="#a" x="520" y="50"></use>
+<use xlink:href="#m" x="605" y="50"></use>
+<use xlink:href="#p" x="710" y="50"></use>
 
 </svg>
 
